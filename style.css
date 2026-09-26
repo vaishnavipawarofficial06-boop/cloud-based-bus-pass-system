@@ -1,0 +1,111 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f4f7fb;
+  color: #1f2937;
+}
+
+.navbar {
+  background: #123c69;
+  color: white;
+  padding: 20px 7%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.navbar h1 {
+  font-size: 24px;
+}
+
+.container {
+  width: min(900px, 92%);
+  margin: 30px auto;
+}
+
+.hero {
+  text-align: center;
+  padding: 30px 10px;
+}
+
+.hero h2 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.card h2 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: grid;
+  gap: 10px;
+}
+
+label {
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+input, select {
+  padding: 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 7px;
+  font-size: 15px;
+}
+
+.price-box {
+  margin-top: 15px;
+  padding: 15px;
+  background: #eef6ff;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button {
+  margin-top: 15px;
+  padding: 13px;
+  border: none;
+  border-radius: 7px;
+  background: #123c69;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #0d2d4f;
+}
+
+.pass {
+  border: 1px solid #dbe4ee;
+  border-left: 5px solid #123c69;
+  padding: 15px;
+  margin: 12px 0;
+  border-radius: 7px;
+}
+
+.muted {
+  color: #64748b;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #64748b;
+}

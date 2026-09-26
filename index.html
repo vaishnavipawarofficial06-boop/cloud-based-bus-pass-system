@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cloud Bus Pass System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+    <h1>🚌 Cloud Bus Pass System</h1>
+    <span>Secure • Reliable • Scalable</span>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h2>Book Your Bus Pass Easily</h2>
+      <p>Choose your route, pass type and travel date.</p>
+    </section>
+
+    <section class="card">
+      <h2>Book a Bus Pass</h2>
+      <form id="bookingForm">
+        <label for="name">Passenger Name</label>
+        <input id="name" type="text" required placeholder="Enter your name">
+
+        <label for="route">Route</label>
+        <select id="route" required>
+          <option value="">Select route</option>
+          <option value="Pune - Mumbai" data-price="250">Pune - Mumbai</option>
+          <option value="Mumbai - Nashik" data-price="300">Mumbai - Nashik</option>
+          <option value="Pune - Nashik" data-price="280">Pune - Nashik</option>
+          <option value="Solapur - Pune" data-price="220">Solapur - Pune</option>
+        </select>
+
+        <label for="passType">Pass Type</label>
+        <select id="passType" required>
+          <option value="">Select pass type</option>
+          <option value="Daily" data-multiplier="1">Daily</option>
+          <option value="Weekly" data-multiplier="6">Weekly</option>
+          <option value="Monthly" data-multiplier="20">Monthly</option>
+        </select>
+
+        <label for="date">Travel Start Date</label>
+        <input id="date" type="date" required>
+
+        <div class="price-box">
+          <span>Calculated Price</span>
+          <strong id="price">₹0</strong>
+        </div>
+
+        <button type="submit">Generate Bus Pass</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>My Bus Passes</h2>
+      <div id="passList">
+        <p class="muted">No passes booked yet.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Cloud-Based Bus Pass System | Academic Project</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
